@@ -7,7 +7,8 @@
 (package-refresh-contents)
 
 ;; Install Intero
-(package-install 'intero)
+(package-install 'intero 'neotree)
+(package-install 'git)
 (add-hook 'haskell-mode-hook 'intero-mode)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
