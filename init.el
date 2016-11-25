@@ -7,7 +7,9 @@
 (package-refresh-contents)
 
 ;; Install Intero
-(package-install 'intero 'neotree)
+(package-install 'intero )
+(package-install 'neotree)
+(package-install 'groovy-mode)
 (package-install 'git)
 (add-hook 'haskell-mode-hook 'intero-mode)
 (custom-set-variables
@@ -32,3 +34,7 @@
 
 (load-theme 'material)
 (global-set-key [f8] 'neotree-toggle)
+
+
+;; Backups
+(setq backup-directory-alist `(("." . "~/.saves")))
