@@ -20,7 +20,9 @@
  '(custom-safe-themes
    (quote
     ("98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" default)))
- '(package-selected-packages (quote (docker yaml-mode git gradle-mode neotree intero)))
+ '(package-selected-packages
+   (quote
+    (fiplr docker yaml-mode git gradle-mode neotree intero)))
  '(safe-local-variable-values
    (quote
     ((haskell-process-use-ghci . t)
@@ -34,6 +36,7 @@
 
 (load-theme 'material)
 (global-set-key [f8] 'neotree-toggle)
+(global-set-key (kbd "C-x f") 'fiplr-find-file)
 
 
 ;; Backups
